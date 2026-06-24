@@ -1,6 +1,6 @@
 # Sistem Sinkronisasi Data Praktikum Antar Laboratorium
 
-Tugas Besar Mata Kuliah Sistem Operasi — Program Studi Sains Data, Semester 2
+Tugas Besar Mata Kuliah Sistem Operasi | Program Studi Sains Data, Semester 2
 
 Sistem ini dibuat untuk menyelesaikan masalah sinkronisasi data praktikum di 3 laboratorium komputer. Sebelumnya sinkronisasi dilakukan manual pakai flashdisk, sering ada file yang beda versi atau hilang, dan tidak ada catatan perubahan sama sekali. Sistem ini mengotomatisasi seluruh proses tersebut menggunakan shell scripting di Ubuntu Linux.
 
@@ -59,17 +59,6 @@ Kalau mau jalan di background terus:
 ```bash
 nohup ./sync_daemon.sh &
 ```
-
----
-
-## Yang Bisa Dilakukan Sistem Ini
-
-- Membandingkan isi dua direktori dan mendeteksi file mana yang hilang atau beda versi
-- Menyalin file yang belum ada di tujuan, memperbarui yang lebih lama
-- Backup otomatis sebelum sinkronisasi dijalankan, dengan auto-cleanup (simpan 7 backup terakhir)
-- File locking supaya tidak terjadi race condition kalau ada dua proses jalan barengan
-- Menyimpan riwayat setiap sinkronisasi lengkap dengan timestamp dan status
-- Bisa jalan di background sebagai daemon, sinkronisasi otomatis tiap 60 detik
 
 ---
 
