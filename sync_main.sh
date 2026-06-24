@@ -2,16 +2,16 @@
 
 #!/bin/bash
 
-echo "=================================================="
-echo "   SISTEM SINKRONISASI DATA PRAKTIKUM ANTAR LAB"
-echo "=================================================="
+echo -e "\n${BOLD}${GREEN}╔════════════════════════════════════════════════╗${NC}"
+  echo -e "${BOLD}${GREEN}║  SISTEM SINKRONISASI DATA PRAKTIKUM ANTAR LAB  ║${NC}"
+  echo -e "${BOLD}${GREEN}╚════════════════════════════════════════════════╝${NC}"
 echo "1. Sinkronisasi Otomatis Semua Lab"
 echo "2. Lihat Riwayat Sinkronisasi"
 echo "3. Backup Manual"
 echo "4. Berhentikan Proses Background (Daemon)"
 echo "5. Buat Simulasi File Lab"
 echo "6. Keluar"
-echo "=================================================="
+echo "══════════════════════════════════════════════════ "
 read -p "Pilih menu [1-6]: " pilihan
 
 case $pilihan in
